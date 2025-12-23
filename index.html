@@ -503,11 +503,11 @@
         }
 
         function loadStaticImages() {
-            const staticImages = [
-                'images/image1.jpg',
-                'images/image2.jpg',
-                'images/image3.png'
-            ];
+            const staticImages = [];
+
+            for (let i = 1; i <= 12; i++) {
+            staticImages.push(`images/image${i}.jpg`);
+            }
 
             const loader = new THREE.TextureLoader();
 
